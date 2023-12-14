@@ -1,0 +1,254 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado (header) */
+header {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/006/263/909/non_2x/white-abstract-background-backdrop-for-presentation-design-for-website-free-photo.jpg);
+    color: #fff;
+    text-align: right;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.header-bg {
+    background-image: url('tu-url-de-imagen-aqui.jpg'); /* Agrega la URL de tu imagen de fondo */
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.line {
+    height: 100px;
+    width: 2px;
+    background-color: #fff;
+    margin-right: 300px;
+}
+
+.line2 {
+    height: 100px;
+    width: 2px;
+    background-color: #fff;
+    margin-right: -470px;
+}
+.iconos {
+    max-width: 30px; /* Ajusta el tamaño de las fotos según sea necesario */
+    margin-bottom: 10px; /* Espaciado entre las fotos y el texto */
+    margin-top: 20px;
+    margin: auto;
+    margin-left: 30px;
+}
+header img {
+    max-height: 150px;
+    margin-right: 20px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: row;
+}
+
+.item {
+    text-align: center;
+    margin-right: 250px;
+    color: #1B307D;
+}
+
+.item h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.item p {
+    margin-bottom: 50px;
+    font-size: 14px;
+}
+
+/* Estilos para la barra de navegación (nav) */
+nav {
+    background-color: #2980b9;
+    color: #fff;
+    padding: 1.0em;
+    text-align: center; /* Alinea el texto al centro */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    position: relative; /* Permite posicionar el elemento secundario de forma absoluta */
+}
+
+/* Lista desplegable oculta inicialmente */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #2980b9; /* Color de fondo para la lista desplegable */
+    z-index: 1; /* Asegura que la lista aparezca sobre otros elementos */
+}
+
+/* Mostrar lista desplegable al pasar el ratón sobre el enlace principal */
+nav li:hover > ul {
+    display: block;
+}
+
+nav ul ul li {
+    display: block;
+    margin-top: 10px; /* Espaciado entre elementos de la lista desplegable */
+}
+
+/* Elimina la flecha en los elementos que tienen lista desplegable */
+nav li ul {
+    display: none;
+}
+
+nav li:hover > ul {
+    display: block;
+}
+
+/* Estilos para el nuevo nav */
+#nav-secondary {
+    background-color: #2980b9; /* Color de fondo para la lista desplegable */
+    color: #fff; /* Cambia el color del texto según tus preferencias */
+    text-align: left;
+    margin-top: -60px;
+}
+
+#nav-secondary ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav-secondary li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav-secondary a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: inherit;
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-left: 120px;
+}
+
+/* Estilos para la lista desplegable */
+#nav-secondary ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #1B307D; /* Cambia el color de fondo según tus preferencias */
+    border-radius: 8px; /* Bordes redondeados */
+    border: 1px solid #fff; /* Ajusta el borde según tus preferencias */
+    text-align: center;
+    margin-left: 120px;
+}
+
+#nav-secondary ul ul li {
+    display: block;
+    text-align: left; /* Alinea el texto a la izquierda en la lista desplegable */
+}
+
+#nav-secondary li:hover > ul {
+    display: block;
+}
+/* Estilos para el menú */
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Color de texto por defecto (blanco) */
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: color 0.3s ease; /* Transición suave para el color de texto */
+}
+
+/* Estilo para el enlace activo */
+nav ul li a.active,
+nav ul li a:hover {
+    color: #1B307D; /* Cambia el color de texto al pasar el ratón o cuando está activo */
+}
+
+
+/* Estilos para el contenido principal (main) */
+main {
+    margin: 20px;
+}
+
+section.centrado {
+    text-align: center;
+}
+
+/* Estilos para el contenedor de imágenes */
+.img-container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 20px 0; /* Agrega espacio arriba y abajo del contenedor */
+}
+
+.img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px; /* Ajusta el espacio entre las filas */
+}
+
+.img-item {
+    margin-bottom: 30px; /* Ajusta el espacio entre las imágenes */
+    box-sizing: border-box; /* Ajusta el modelo de caja para que el margen no afecte el ancho */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.img img {
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box; /* Ajusta el modelo de caja para que el margen no afecte el ancho */
+}
+
+/* Ajuste para que haya 5 imágenes en cada fila */
+.img-item:nth-child(n+6) {
+    margin-top: 80px; /* Ajusta el espacio entre las filas */
+}
+
+/* Cambia el color de fondo al pasar el cursor sobre la imagen */
+.img-item:hover {
+    background-color: #f0f0f0; /* Cambia este color según tus preferencias */
+}
+
+.info-box {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/006/263/909/non_2x/white-abstract-background-backdrop-for-presentation-design-for-website-free-photo.jpg);
+    padding: 20px;
+    margin-top: 20px; /* Ajusta la separación entre las imágenes y el cuadro de información */
+    text-align: center;
+}
+
+/* Estilos para el pie de página (footer) */
+footer {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+}
